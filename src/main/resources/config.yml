@@ -1,0 +1,3 @@
+# Charge amount per tpa request
+tpa:
+  cost: 10.0

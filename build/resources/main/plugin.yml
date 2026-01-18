@@ -1,0 +1,13 @@
+name: pishangextensions
+version: '1.1-SNAPSHOT'
+main: com.mirai.pishangextensions.Main
+api-version: '1.21'
+
+commands:
+  pishangextension:
+    description: Main command for PishangExtension plugin
+    usage: /pishangextension <info|reload>
+  tpa:
+    description: Request to teleport to a player
+  tpaccept:
+    description: Accept a teleport request
