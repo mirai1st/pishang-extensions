@@ -6,4 +6,4 @@ This is a extension for my minecraft community server.
 > 2. Essentials
 
 ## Included Functions
- tpacharge -> Make tpa request and accept session costed money.
+- tpacharge -> Make tpa request and accept session costed money.
