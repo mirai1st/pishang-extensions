@@ -11,6 +11,6 @@ This is a extension for my minecraft community server.
 ### config.yml
 - Here you can edit the plugin configurations
 
-> # Charge amount per tpa request
+> Charge amount per tpa request
 > tpa:
 >   cost: 10.0
