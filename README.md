@@ -6,7 +6,7 @@ This is a extension for my minecraft community server. This plugin depended on [
 2. Essentials
 
 ### 🆕 Included Functions
-> /tpacharge -> Make tpa request and accept costed money after each session complete. (if accepter deny the TPA request, the requester will not be charged)
+> tpacharge system -> Modified the essential tpa request and accept system costed money after each session complete. (if accepter deny the TPA request, the requester will not be charged)
 
 ### config.yml
 Here you can edit the plugin configurations
