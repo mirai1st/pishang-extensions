@@ -1,4 +1,4 @@
-## 🍌 Pishang Extensions
+## Pishang Extensions
 This is a extension for my minecraft community server.
 
 ### ⚠️ Plugin Required (Depend)
