@@ -7,3 +7,10 @@ This is a extension for my minecraft community server.
 
 ### 🆕 Included Functions
 - /tpacharge -> Make tpa request and accept costed money after each session complete. (if accepter deny the TPA request, the requester will not be charged)
+
+### config.yml
+- Here you can edit the plugin configurations
+
+> # Charge amount per tpa request
+> tpa:
+>   cost: 10.0
