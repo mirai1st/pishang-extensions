@@ -1,5 +1,7 @@
 package com.mirai.pishangextensions;
 
+import net.luckperms.api.LuckPerms;
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -10,6 +12,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 public final class Main extends JavaPlugin {
     public Economy econ;
     public Permission perms;
+    private LuckPerms luckPerms;
 
     @Override
     public void onEnable() {
@@ -20,6 +23,17 @@ public final class Main extends JavaPlugin {
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
+
+        RegisteredServiceProvider<LuckPerms> provider =
+                Bukkit.getServicesManager().getRegistration(LuckPerms.class);
+
+        if (provider != null) {
+            luckPerms = provider.getProvider();
+        }
+
+        getCommand("recording").setExecutor(new Commands(luckPerms));
+        getCommand("streaming").setExecutor(new Commands(luckPerms));
+
 
         new TpaCharge(this).register();
 
@@ -61,7 +75,7 @@ public final class Main extends JavaPlugin {
 
         // kalau tak tulis subcommand
         if (args.length == 0) {
-            sender.sendMessage("Usage: /pishangextension <info|reload>");
+            sender.sendMessage("Usage: /pishangextension <info/reload>");
             return true;  // penting return true
         }
 
@@ -70,7 +84,7 @@ public final class Main extends JavaPlugin {
             case "info" -> {
                 sender.sendMessage("§aPishangExtension Plugin v" + getDescription().getVersion());
                 sender.sendMessage("§aAuthor: Mirai1st");
-                sender.sendMessage("§aGithub: https://github.com/mirai1st");
+                sender.sendMessage("§aGithub: https://github.com/mirai1st/pishang-extensions");
             }
             case "reload" -> {
                 reloadConfig();
@@ -81,7 +95,6 @@ public final class Main extends JavaPlugin {
 
         return true;  // penting supaya command tak “bubble” ke default handler
     }
-
 
     public Economy getEconomy() {
         return econ;

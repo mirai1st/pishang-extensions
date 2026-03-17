@@ -1,3 +1,15 @@
-# Charge amount per tpa request
+# allow tpa to yourself, use in development.
+allow-tpa-to-yourself: false
+
+# true - default tpa cost per sessions. // false - use tpacharge by grouping system.
+use-def-tpacharge-system: true
+
 tpa:
-  cost: 10.0
+  def-cost: 10.0
+
+tpahere:
+  def-cost: 10.0
+
+# sound after recieving teleportation request
+enable-sound-tpa: true
+sound-tpa: "Sound.ENTITY_EXPERIENCE_ORB_PICKUP"

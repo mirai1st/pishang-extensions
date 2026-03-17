@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.mirai'
-version = '1.0-SNAPSHOT'
+version = '1.2.5-BETA'
 
 repositories {
     mavenCentral()
@@ -12,12 +12,23 @@ repositories {
         name = "papermc-repo"
         url = "https://repo.papermc.io/repository/maven-public/"
     }
-    maven { url 'https://jitpack.io' }
+
+    maven {
+        name = "jitpack"
+        url = "https://jitpack.io"
+    }
+
+
+    maven {
+        name = "luckperms"
+        url = "https://repo.lucko.me/"
+    }
 }
 
 dependencies {
     compileOnly "io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT"
     compileOnly "com.github.MilkBowl:VaultAPI:1.7"
+    compileOnly "net.luckperms:api:5.4"
 }
 
 tasks {
