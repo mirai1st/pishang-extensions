@@ -75,7 +75,7 @@ public class TpaCharge {
                 target.playSound(target.getLocation(), getSound(), 1f, 1f);
             }
 
-            requester.sendMessage("TPA request sent to " + target.getName());
+            requester.sendMessage("Tpa request sent to " + target.getName());
 
             return true;
         });
@@ -119,7 +119,7 @@ public class TpaCharge {
                 target.playSound(target.getLocation(), getSound(), 1f, 1f);
             }
 
-            requester.sendMessage("TPAHere request sent to " + target.getName());
+            requester.sendMessage("Tpahere request sent to " + target.getName());
 
             return true;
         });
