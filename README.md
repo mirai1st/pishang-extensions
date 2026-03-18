@@ -1,4 +1,4 @@
-## Pishang Extensions
+## 🍌 Pishang Extensions
 This is a extension for my minecraft community server. This plugin depended on [VaultAPI](https://github.com/MilkBowl/VaultAPI) and [Essentials](https://github.com/EssentialsX/Essentials) to work.
 
 ### ⚠️ Plugin Required (Depend)
