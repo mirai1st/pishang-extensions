@@ -6,6 +6,8 @@ Vault, LuckPerms
 
 ### 🆕 Included Functions
 > - TPACharge System -> Modified the essential tpa request and accept system to cost money after each session complete. (if accepter deny the TPA request, the requester will not be charged)
+> - /streaming
+> - /recording
 
 ### config.yml
 Here you can edit the plugin configurations
