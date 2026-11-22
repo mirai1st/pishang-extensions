@@ -1,0 +1,12 @@
+# World teleport restrictions
+# World names must match the actual world names (default world is usually "world").
+# "from" = world of the player who moves, "to" = world of the destination.
+# Use "*" to match any world. Actions: TPA, TPAHERE
+
+restrictions:
+  - from: world
+    to: resource
+    actions:
+      - TPA
+      - TPAHERE
+    message: "&cYou cannot enter the resource world from the overworld!"

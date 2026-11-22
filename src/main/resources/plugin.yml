@@ -1,28 +1,38 @@
-name: pishangextensions
-version: '1.3'
-main: com.mirai.pishangextensions.Main
-api-version: '1.21'
+name: pishangext
+version: '${version}'
+main: pishangext.Main
+api-version: '26.3'
 depend:
   - Vault
   - LuckPerms
 
 commands:
-  pishangextension:
+  pishangext:
     description: Main command for Pishang Extension plugin
-    usage: /pishangextension <info|reload>
+    usage: /pishangext <info|reload>
   tpa:
     description: Request to teleport to a player
     usage: /tpa <player>
   tpaccept:
     description: Accept a teleport request
-    usage: /tpaccept <player>
+    usage: /tpaccept [player]
   tpacceptall:
-    description: Accept all current teleportation request.
+    description: Accept all current teleportation requests
     usage: /tpacceptall
   tpahere:
-    description: Request player to teleport to you.
+    description: Request player to teleport to you
     usage: /tpahere <player>
+  tpacancel:
+    description: Cancel current TPA request
+    usage: /tpacancel
   recording:
-    description: Notify other player that the current execute player is recording.
+    description: Notify other players that you are recording
+    usage: /recording
   streaming:
-    description: Notify other player that the current execute player is streaming.
+    description: Notify other players that you are streaming
+    usage: /streaming
+
+permissions:
+  pishangext.admin:
+    description: Allows reloading PishangExt configuration
+    default: op

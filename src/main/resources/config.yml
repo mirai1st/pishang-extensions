@@ -1,8 +1,12 @@
+# ========= CONFIGURATIONS =========
+# check GitHub for a newer release when the server starts.
+check-updates: true
+
 # allow tpa to yourself, use in development.
 allow-tpa-to-yourself: false
 
-# true - default tpa cost per sessions. // false - use tpacharge by grouping system.
-use-def-tpacharge-system: true
+# TPA request expiry time (in seconds)
+tpa-expiry: 180
 
 tpa:
   def-cost: 10.0
@@ -10,6 +14,7 @@ tpa:
 tpahere:
   def-cost: 10.0
 
-# sound after recieving teleportation request
+# sound after receiving teleportation request
 enable-sound-tpa: true
-sound-tpa: "Sound.ENTITY_EXPERIENCE_ORB_PICKUP"
+# Use the Minecraft sound key (dots, not underscores), e.g. entity.experience_orb.pickup
+sound-tpa: "entity.experience_orb.pickup"

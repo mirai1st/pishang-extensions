@@ -1,0 +1,6 @@
+[versions]
+minecraft = "26.3"
+run-task = "3.1.0"
+
+[plugins]
+run-paper = { id = "xyz.jpenilla.run-paper", version.ref = "run-task" }
