@@ -10,7 +10,6 @@ The following plugins are required for Pishang Extensions to function properly:
 
 - **[Vault](https://github.com/MilkBowl/VaultAPI)** – Economy integration.
 - **[LuckPerms](https://luckperms.net/)** – Permission management.
-- **[EssentialsX](https://github.com/EssentialsX/Essentials)** – Teleportation functionality.
 
 ## ✨ Features
 
@@ -57,7 +56,7 @@ Changes can be applied using `/pishangext reload` without manually restarting th
 ## 📋 Compatibility
 
 - **Server Software:** Paper
-- **Dependencies:** Vault, LuckPerms, EssentialsX
+- **Dependencies:** Vault, LuckPerms
 - **Language:** Java
 
 ## 📜 License
